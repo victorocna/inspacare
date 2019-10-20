@@ -1,0 +1,38 @@
+baseUrl = "https://inspacare.netlify.com"
+title = "Inspacare | Where inspiration meets quality care"
+theme = "ion"
+languageCode = "en-US"
+enableRobotsTXT = true
+
+[params]
+  author = "Victor Ocnarescu"
+  fonts = "https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
+  sitename = "Inspacare"
+  description = "Where inspiration meets quality care"
+  # image = "/chesscoders-wallpaper.jpg"
+  favicon = "favicon.ico"
+  # analytics = "UA-127399322-1"
+  fontAwesome = true
+  headingFont = "'Nunito Sans', sans-serif"
+  bodyFont = "'Nunito Sans', sans-serif"
+  primaryColor = "#007b85"
+  secondaryColor = "#4252b1"
+
+[menu]
+  [[menu.main]]
+    name = "About us"
+    url = "/#/"
+    weight = 100
+  [[menu.main]]
+    name = "The problem"
+    url = "/#/"
+    weight = 110
+  [[menu.main]]
+    name = "Our solution"
+    url = "/#/"
+    weight = 120
+  [[menu.main]]
+    name = "Get started"
+    url = "/#/"
+    weight = 130
+    type = "button"

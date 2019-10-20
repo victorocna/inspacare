@@ -1,0 +1,3 @@
+[submodule "themes/ion"]
+	path = themes/ion
+	url = https://github.com/victorocna/ion
