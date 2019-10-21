@@ -1,5 +1,7 @@
 # Hugo theme starter with Tailwindcss support
 
+## Quick start
+
 ```bash
-git submodule add https://github.com/victorocna/ion themes/ion
+git subtree add --prefix themes/ion https://github.com/victorocna/ion.git master --squash
 ```
