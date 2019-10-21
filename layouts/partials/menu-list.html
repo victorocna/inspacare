@@ -1,0 +1,24 @@
+<ul class="bg-white lg:bg-transparent text-gray-900 text-left lg:flex lg:items-center lg:justify-center" id="menulist">
+  <li class="lg:hidden">
+    <button onclick="closeMenu()" class="w-8 h-8 bg-red-500 text-white" aria-label="Close menu">
+      <i class="fas fa-times"></i>
+    </button>
+  </li>
+  {{ range .Site.Menus.main }}
+  <li class="border-gray-200 px-4 border-b border-gray-200 lg:border-0">
+    {{if eq .Name "Logo"}}
+      <a href="/" class="flex items-center">
+        <img src="/images/inspacare-logo-dark.png" alt="Inspacare Logo" width="104" />
+      </a>
+    {{else}}
+      {{$extra := ""}}
+      {{with .Identifier}}
+        {{$extra = "bg-green text-white py-2 px-4"}}
+      {{end}}
+      <a href="{{.URL}}" class="block lg:inline text-lg tracking-wide {{$extra}}">
+        <span class="menu-text">{{ .Name }}</span>
+      </a>
+    {{end}}
+  </li>
+  {{ end }}
+</ul>

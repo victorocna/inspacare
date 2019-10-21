@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 [params]
   author = "Victor Ocnarescu"
-  fonts = "https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
+  fonts = "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800&display=swap"
   sitename = "Inspacare"
   description = "Where inspiration meets quality care"
   # image = "/chesscoders-wallpaper.jpg"
@@ -28,6 +28,10 @@ enableRobotsTXT = true
     url = "/#/"
     weight = 110
   [[menu.main]]
+    name = "Logo"
+    url = "/#/"
+    weight = 120
+  [[menu.main]]
     name = "Our solution"
     url = "/#/"
     weight = 120
@@ -35,4 +39,4 @@ enableRobotsTXT = true
     name = "Get started"
     url = "/#/"
     weight = 130
-    type = "button"
+    identifier = "button"

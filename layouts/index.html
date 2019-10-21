@@ -1,0 +1,118 @@
+{{ define "main" }}
+<article
+  class="text-center text-gray-700 text-white flex flex-col items-center justify-center"
+  style="background: url(/images/background-homepage.jpg) center center / cover no-repeat; height: 60vh;"
+>
+  <div class="fadeIn animate-me">
+    {{ partial "glovesafe" (dict "context" . "color" "#fff") }}
+  </div>
+
+  {{ with .Site.GetPage "page" "home" }}
+  <div class="fadeInRight animate-me delay-me">
+    <h2 class="text-4xl text-white w-full font-light">{{ .Params.H1 }}</h2>
+    <h2 class="text-4xl text-white w-full">{{ .Params.H2 }}</h2>
+  </div>
+
+  <div class="fadeInRight animate-me delay-me my-12">
+    {{ range.Params.Buttons }}
+    <a
+      href="{{.url}}"
+      class="text-white text-lg tracking-wide bg-green py-4 px-8 mx-4 border border-gray-300 uppercase"
+    >
+      <span>{{ .name }}</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+
+<article class="bg-white py-4">
+  <div class="px-4 lg:px-0 lg:mx-auto lg:flex" style="max-width: 1200px">
+    {{ with .Site.GetPage "page" "the-facts" }}
+    <div class="w-1/2 py-12">
+      <h3 class="text-blue text-3xl font-bold">{{ .Title }}</h3>
+      <div class="border border-green border-1 my-6 w-24"></div>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="w-1/2 border-dashed p-4" style="border-left-width: 2px; border-color: #007b85">
+      <div class="hover-scale overflow-hidden" style="border: solid 32px #fff">
+        <img class="hover-target" src="{{ .Params.Image }}" />
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</article>
+
+<article class="bg-gray-100 py-4">
+  <div class="lg:px-0 lg:mx-auto lg:flex" style="max-width: 1200px">
+    <div class="w-1/2 py-12 px-12 flex flex-col items-center">
+      {{ with .Site.GetPage "page" "the-problem" }}
+      <div
+        class="bg-green text-white p-4 rounded-full w-16 h-16 flex items-center justify-center text-3xl"
+      >
+        <i class="{{ .Params.Icon }}"></i>
+      </div>
+      <h3 class="text-blue text-3xl font-bold my-4">{{ .Title }}</h3>
+
+      <div class="hover-scale overflow-hidden" style="border: solid 32px #fff">
+        <img class="hover-target" src="{{ .Params.Image }}" />
+      </div>
+
+      <div class="content my-4">
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div
+      class="w-1/2 py-12 px-12 flex flex-col items-center border-dashed"
+      style="border-left-width: 2px; border-color: #007b85"
+    >
+      {{ with .Site.GetPage "page" "the-solution" }}
+      <div
+        class="bg-green text-white p-4 rounded-full w-16 h-16 flex items-center justify-center text-3xl"
+      >
+        <i class="{{ .Params.Icon }}"></i>
+      </div>
+      <h3 class="text-blue text-3xl font-bold my-4">{{ .Title }}</h3>
+
+      <div class="hover-scale overflow-hidden" style="border: solid 32px #fff">
+        <img class="hover-target" src="{{ .Params.Image }}" />
+      </div>
+
+      <div class="content my-4">
+        {{ .Content }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+
+<article>
+  {{ partial "teaser.html" }}
+</article>
+
+<article class="bg-white py-4">
+  <div class="px-4 lg:px-0 lg:mx-auto lg:flex" style="max-width: 1200px">
+    {{ with .Site.GetPage "page" "who-we-are" }}
+    <div class="w-1/2 py-12">
+      <h3 class="text-blue text-3xl font-bold">{{ .Title }}</h3>
+      <div class="border border-green border-1 my-6 w-24"></div>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="w-1/2 border-dashed px-8" style="border-left-width: 2px; border-color: #007b85">
+      <div class="py-12">
+        <h3 class="text-blue text-3xl font-bold">Testimonials</h3>
+        <div class="border border-green border-1 my-6 w-24"></div>
+        {{ partial "testimonials.html" .Site.GetPage "page" "the-problem" }}
+      </div>
+    </div>
+  </div>
+</article>
+
+{{ end }}
