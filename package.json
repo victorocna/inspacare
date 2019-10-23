@@ -4,9 +4,19 @@
   "description": "The inspacare.com website",
   "main": "index.js",
   "scripts": {
+    "build": "hugo --gc --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "victorocna",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorocna/inspacare.git"
+  },
+  "keywords": [
+    "hugo",
+    "tailwindcss",
+    "netlify"
+  ],
+  "author": "victorocna <victor@chesscoders.com> (https://chesscoders.com)",
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
