@@ -1,4 +1,4 @@
-module.exports = async (event) => {
+exports.handler = async () => {
   console.log("GET /.netlify/functions/ Hello world")
 
   return {
