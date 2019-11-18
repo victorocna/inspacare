@@ -1,8 +1,10 @@
+const morgan = require("morgan");
+
 exports.handler = async () => {
-  console.log("GET /.netlify/functions/ Hello world")
+  morgan("dev");
 
   return {
     statusCode: 200,
     body: "Ok"
-  }
-}
+  };
+};
