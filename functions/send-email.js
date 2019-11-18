@@ -1,8 +1,7 @@
-const morgan = require("morgan");
+const ip = require("ip")
 
-exports.handler = async () => {
-  morgan(":method :url");
-  morgan("combined");
+exports.handler = async (event) => {
+  console.log(`${event.httpMethod} ${event.path} ${ip.address()}`)
 
   return {
     statusCode: 200,
