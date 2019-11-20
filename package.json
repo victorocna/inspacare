@@ -8,8 +8,7 @@
     "build:site": "hugo --gc --minify",
     "build": "npm run build:site & npm run build:functions",
     "start:server": "netlify-lambda serve functions",
-    "start:site": "hugo server",
-    "start": "npm run start:site && npm run start:server",
+    "start": "hugo server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
