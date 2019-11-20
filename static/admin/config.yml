@@ -2,14 +2,14 @@ backend:
   name: git-gateway
 media_folder: static/images
 public_folder: /images
-# logo_url: /images/inspacare-logo-dark.png
+logo_url: /images/inspacare-logo-admin.png
 collections:
-  - name: testimonials # Used in routes, e.g., /admin/collections/blog
-    label: Testimonials # Used in the UI
-    folder: content/testimonials # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: testimonials
+    label: Testimonials
+    folder: content/testimonials
+    create: true
+    slug: "{{slug}}"
+    fields:
       - label: Title
         name: title
         widget: string
@@ -19,11 +19,13 @@ collections:
       - label: Body
         name: body
         widget: markdown
-  - name: config
-    label: Global Site Config
+  - name: settings
+    label: Settings
+    editor:
+      preview: false
     files:
-      - name: config
-        label: Global Site Config
+      - name: settings
+        label: Update your website settings by clicking here
         file: config.toml
         fields:
           - widget: string
@@ -42,3 +44,39 @@ collections:
                 label: Primary Color
                 required: false
                 hint: Primary color of the website
+  - name: menu
+    label: Menus
+    editor:
+      preview: false
+    files:
+      - name: menu
+        label: Update your website menu by clicking here
+        file: config.toml
+        fields:
+          - widget: object
+            name: menu
+            label: Site Menus
+            required: false
+            hint: Menu items not related to a specific page
+            fields:
+              - widget: list
+                name: main
+                label: Main menu
+                required: false
+                hint: List of items for Main menu
+                fields:
+                  - widget: string
+                    name: name
+                    label: Menu text
+                    required: true
+                  - widget: string
+                    name: url
+                    label: Menu link
+                    required: true
+                  - widget: number
+                    name: weight
+                    label: Menu weight
+                    required: true
+                    hint: >-
+                      A menu item is more important (placed more to the left)
+                      if its weight is smaller
