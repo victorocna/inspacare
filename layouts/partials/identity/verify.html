@@ -14,7 +14,6 @@
       xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4) {
           const response = JSON.parse(this.responseText) || {}
-          console.log(response, typeof this.responseText)
           if (response && response.access_token) {
             window.location.href = "{{ .Site.BaseURL | absURL }}/admin/#/"
           }
