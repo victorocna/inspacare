@@ -2,7 +2,8 @@
 title: The Glovesafe solution
 date: 2019-10-20
 icon: fas fa-lightbulb
-image: images/The-solution_lateral-medium.jpg
+image: images/inspacare-glovesafe-closeup-large.jpg
+href: our-solution
 ---
 
 The unique patented design of the Inspacare GloveSafe reduces waste and contamination:

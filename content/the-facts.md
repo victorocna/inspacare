@@ -1,7 +1,7 @@
 ---
 title: The Facts
 date: 2019-10-20
-image: /images/Matt_and_boxes.jpeg
+image: images/inspacare-glovesafe-solution-large.jpg
 ---
 
 **For every two pairs of gloves used in clinical settings, one gets wasted due to contamination or spillage.**

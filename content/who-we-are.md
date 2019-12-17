@@ -1,6 +1,7 @@
 ---
 title: Who we are
 date: 2019-10-20
+href: who-we-are
 ---
 
 **Inspacare was founded by a team of clinicians and engineers with a shared goal of solving big problems that are overlooked in healthcare.**

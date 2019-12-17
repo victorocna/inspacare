@@ -2,7 +2,8 @@
 title: The Problem
 date: 2019-10-20
 icon: fas fa-exclamation-circle
-image: /images/The_Problem_lateral-medium.jpg
+image: images/inspacare-the-problem-large.jpg
+href: the-problem
 ---
 
 - Attempting to select a single glove with a subsequent clump of gloves pouring out on the floor and/or other objects.

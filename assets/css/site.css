@@ -12,11 +12,9 @@ html {
 }
 
 .content {
-  color: rgb(133, 138, 159);
-  font-size: 1.125rem;
+  color: #464f72;
   font-weight: 300;
   line-height: 1.625em;
-  padding-right: 1.5em;
 }
 .content strong {
   color: #4252b1;

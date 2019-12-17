@@ -1,5 +1,5 @@
 ---
-title: Shaun Marczak
+title: Shaun Marczak, PA-C
 company: Cardiothoracic surgery at Mayo Clinic
 ---
 

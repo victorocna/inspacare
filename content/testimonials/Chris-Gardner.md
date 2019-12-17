@@ -1,5 +1,5 @@
 ---
-title: Chris Gardner
+title: Chris Gardner, ARNP
 company: Owner of Gardner Express Care
 ---
 
