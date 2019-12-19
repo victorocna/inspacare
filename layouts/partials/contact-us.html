@@ -1,6 +1,6 @@
 <div>
   <h3 class="text-blue text-3xl font-bold">
-    <a name="contact-us">Contact us!</a>
+    <a name="order-now">Contact us!</a>
   </h3>
   <div class="border border-green border-1 my-6 w-24"></div>
 
@@ -49,8 +49,10 @@
       }
 
       // Set up our request
-      XHR.open("POST", "/.netlify/functions/contact-form");
-      XHR.send(jsonData);
+      if (!~"{{ .Site.BaseURL | absURL }}".indexOf("localhost")) {
+        XHR.open("POST", "{{ .Site.BaseURL | absURL }}/.netlify/functions/contact-form");
+        XHR.send(jsonData);
+      }
     }
 
     // Access the form element...
