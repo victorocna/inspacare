@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article
-  class="p-4 text-center text-gray-700 text-white flex flex-col items-center justify-center"
+  class="py-4 px-6 text-center text-gray-700 text-white flex flex-col items-center justify-center"
   style="background: url(/images/background-homepage.jpg) center center / cover no-repeat;"
 >
   <div class="fadeIn animate-me">
@@ -23,7 +23,7 @@
   {{ end }}
 </article>
 
-<article class="bg-white py-4">
+<article class="bg-white py-4 px-6">
   <div class="lg:mx-auto lg:flex" style="max-width: 1200px">
     {{ with .Site.GetPage "page" "the-facts" }}
     <div class="lg:w-1/2 py-6 lg:py-12 px-6 lg:px-0">
@@ -42,7 +42,7 @@
   </div>
 </article>
 
-<article class="bg-gray-100 py-4">
+<article class="bg-gray-100 py-4 px-6">
   <div class="lg:px-0 lg:mx-auto lg:flex" style="max-width: 1200px">
     <div class="lg:w-1/2 py-6 lg:px-12 flex flex-col items-center">
       {{ with .Site.GetPage "page" "the-problem" }}
@@ -88,8 +88,8 @@
   {{ partial "teaser.html" }}
 </article>
 
-<article class="bg-white py-4">
-  <div class="px-6 lg:px-0 lg:mx-auto lg:flex" style="max-width: 1200px">
+<article class="bg-white py-4 px-6">
+  <div class="lg:mx-auto lg:flex" style="max-width: 1200px">
     {{ with .Site.GetPage "page" "who-we-are" }}
     <div class="lg:w-1/2 py-6 lg:py-12">
       <h3 class="text-blue text-3xl font-bold">
@@ -107,6 +107,25 @@
         <div class="border border-green border-1 my-6 w-24"></div>
         {{ partial "testimonials.html" .Site.GetPage "page" "the-problem" }}
       </div>
+    </div>
+  </div>
+</article>
+
+<article class="bg-gray-100 py-4 px-6">
+  <div class="lg:mx-auto lg:flex" style="max-width: 1200px">
+    {{ with .Site.GetPage "page" "the-benefits" }}
+    <div class="lg:w-1/2 py-6 lg:py-12 the-benefits">
+      <h3 class="text-blue text-3xl font-bold">
+        <a name="{{ .Params.Href }}">{{ .Title }}</a>
+      </h3>
+      <div class="border border-green border-1 my-6 w-24"></div>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="lg:w-1/2 py-6 lg:py-12 border-dashed border-green lg:border-l-2 lg:px-12">
+      {{ partial "contact-us.html" . }}
     </div>
   </div>
 </article>

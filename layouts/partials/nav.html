@@ -1,5 +1,8 @@
-<header class="w-full p-4 flex justify-between items-center z-50">
+<header class="w-full p-6 flex justify-between items-center z-50">
   <div class="w-full lg:mx-auto flex justify-between items-center" style="max-width: 1200px;">
+    <a href="/" class="block lg:hidden flex items-center">
+      <img src="/images/inspacare-logo-dark.png" alt="Inspacare Logo" width="64" title="&larr; Back to the homepage" />
+    </a>
     <nav class="nav-menu inline-block lg:block lg:w-full">
       <label class="block">
         <input type="checkbox" id="menu" class="lg:hidden" aria-label="Menu open/close" />
@@ -7,8 +10,12 @@
         {{ partial "menu-list.html" . }}
       </label>
     </nav>
-    <button class="w-8 h-8 lg:hidden" onclick="openMenu()" aria-label="Open menu">
-      <i class="fas fa-bars w-8 text-2xl" id="menubutton"></i>
+    <button
+      class="lg:hidden text-green flex items-center rounded-full border-2 p-1"
+      onclick="openMenu()" aria-label="Open menu" id="menubutton"
+    >
+      <i class="fas fa-bars w-8 text-xl" id="menuicon"></i>
+      Menu
     </button>
   </div>
 </header>
@@ -24,7 +31,7 @@
 
   function outsideClickListener(event) {
     if (
-      !["menubutton", "menulist", "menu"].includes(event.target.id) &&
+      !["menubutton", "menulist", "menuicon", "menu"].includes(event.target.id) &&
       document.getElementById("menu").checked
     ) {
       removeClickListener();

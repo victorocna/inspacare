@@ -1,7 +1,6 @@
 ---
 title: The Glovesafe Benefits
 date: 2019-10-20
-icon: fas fa-exclamation-circle
 image: /images/The-Glovesafe-benefits.jpg
 ---
 
