@@ -8,9 +8,9 @@ enableRobotsTXT = true
   fonts = "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800&display=swap"
   sitename = "Inspacare"
   description = "Where inspiration meets quality care"
-  # image = "/chesscoders-wallpaper.jpg"
+  image = "/images/inspacare-wallpaper.jpg"
   favicon = "favicon.ico"
-  # analytics = "UA-127399322-1"
+  analytics = "UA-154808408-1"
   fontAwesome = true
   headingFont = "'Nunito Sans', sans-serif"
   bodyFont = "'Nunito Sans', sans-serif"

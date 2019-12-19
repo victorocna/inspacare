@@ -15,6 +15,7 @@ html {
   color: #464f72;
   font-weight: 300;
   line-height: 1.625em;
+  padding-right: 1rem;
 }
 .content strong {
   color: #4252b1;
