@@ -18,6 +18,7 @@ module.exports = {
     require("tailwindcss")(themeDir + "assets/css/tailwind.config.js"),
     require("@fullhuman/postcss-purgecss")({
       content: ["**/*.html"],
+      whitelistPatterns: [/swiper/],
       extractors: [
         {
           extractor: TailwindExtractor,
