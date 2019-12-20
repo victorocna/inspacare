@@ -1,4 +1,4 @@
-# Inspacare
+# Inspacare [![Netlify Status](https://api.netlify.com/api/v1/badges/c3e739ab-d2e8-4002-9ab9-a9ca2b903ecc/deploy-status)](https://app.netlify.com/sites/inspacare/deploys)
 
 The inspacare.com website
 
