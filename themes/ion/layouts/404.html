@@ -1,3 +1,22 @@
-{{ define "main" }}
-<p>404 - page not found</p>
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "head.html" . }}
+  {{ partial "og.html" . }}
+</head>
+
+<body class="flex flex-col min-h-screen font-body">
+  <main aria-role="main" class="flex flex-1 flex-col justify-center items-center bg-blue text-white p-4">
+    <img src="/images/inspacare-logo-white.png" alt="Inspacare Logo" class="w-24 h-24 mb-2" />
+    <h1 class="text-xl lg:text-2xl font-display text-center mb-2">
+      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    </h1>
+    <h2 class="text-normal lg:text-xl font-display text-center mb-2">404 Error! Page not found</h2>
+    <div class="text-normal lg:text-lg mt-4">
+      <a class="bg-green text-white py-2 px-4 border border-gray-200" href="/">Back to homepage</a>
+    </div>
+  </main>
+</body>
+
+</html>
