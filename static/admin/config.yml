@@ -4,6 +4,82 @@ media_folder: static/images
 public_folder: /images
 logo_url: /images/inspacare-logo-admin.png
 collections:
+  - name: homepage
+    label: Homepage sections
+    editor:
+      preview: false
+    files:
+      - name: the-facts
+        label: The facts
+        file: content/the-facts.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: image
+            label: Image
+            widget: image
+          - name: body
+            label: Body
+            widget: markdown
+      - name: who-we-are
+        label: Who we are
+        file: content/who-we-are.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: image
+            label: Image
+            widget: image
+          - name: body
+            label: Body
+            widget: markdown
+      - name: the-benefits
+        label: The benefits
+        file: content/the-benefits.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: image
+            label: Image
+            widget: image
+          - name: body
+            label: Body
+            widget: markdown
+      - name: the-problem
+        label: The problem
+        file: content/the-problem.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: image
+            label: Image
+            widget: image
+          - name: icon
+            label: Font Awesome Icon
+            widget: string
+          - name: body
+            label: Body
+            widget: markdown
+      - name: the-solution
+        label: The solution
+        file: content/the-solution.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: image
+            label: Image
+            widget: image
+          - name: icon
+            label: Font Awesome Icon
+            widget: string
+          - name: body
+            label: Body
+            widget: markdown
   - name: testimonials
     label: Testimonials
     folder: content/testimonials
@@ -40,10 +116,17 @@ collections:
             hint: Site parameters
             fields:
               - widget: string
-                name: primaryColor
-                label: Primary Color
-                required: false
-                hint: Primary color of the website
+                name: sitename
+                label: Title for SEO purposes
+              - widget: string
+                name: description
+                label: Description for SEO purposes
+              - widget: string
+                name: analytics
+                label: Google Analytics tracking code
+              - widget: boolean
+                name: fontAwesome
+                label: Use Font Awesome icons?
   - name: menu
     label: Menus
     editor:

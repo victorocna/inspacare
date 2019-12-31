@@ -20,7 +20,7 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
     name = "About us"
-    url = "/#/who-we-are"
+    url = "/#who-we-are"
     weight = 100
   [[menu.main]]
     name = "The problem"
@@ -28,7 +28,7 @@ enableRobotsTXT = true
     weight = 110
   [[menu.main]]
     name = "Logo"
-    url = "/#/"
+    url = "/"
     weight = 120
   [[menu.main]]
     name = "Our solution"
