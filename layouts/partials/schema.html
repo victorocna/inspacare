@@ -1,0 +1,11 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{{ .Site.Params.schema.type }}",
+    "name": "{{ .Site.Title }}",
+    "image": "{{ .Site.Params.Image | absURL }}",
+    "url": "{{ .Site.BaseURL | absURL }}",
+    "email": "{{ .Site.Params.schema.email }}",
+    "brand": "{{ .Site.Params.schema.brand }}"
+  }
+</script>

@@ -1,0 +1,18 @@
+author = "Victor Ocnarescu"
+sitename = "Inspacare"
+description = "Inspacare introduces Glovesafe, an innovative glove dispenser. Reduces waste and contamination of gloves inadvertently removed. Improves safety"
+image = "/images/inspacare-wallpaper.jpg"
+favicon = "favicon.ico"
+analytics = "UA-154808408-1"
+fontAwesome = true
+[fonts]
+  heading = "'Nunito Sans', sans-serif"
+  body = "'Nunito Sans', sans-serif"
+  url = "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800&display=swap"
+[colors]
+  primary = "#007b85"
+  secondary = "#4252b1"
+[schema]
+  type = "Organization"
+  brand = "Glovesafe | An innovative glove dispenser"
+  email = "info@inspacare.com"

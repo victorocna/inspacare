@@ -1,0 +1,21 @@
+[[main]]
+  name = "About us"
+  url = "/#who-we-are"
+  weight = 100
+[[main]]
+  name = "The problem"
+  url = "/#the-problem"
+  weight = 110
+[[main]]
+  name = "Logo"
+  url = "/"
+  weight = 120
+[[main]]
+  name = "Our solution"
+  url = "/#our-solution"
+  weight = 120
+[[main]]
+  name = "Order now"
+  url = "/#order-now"
+  weight = 130
+  identifier = "button"

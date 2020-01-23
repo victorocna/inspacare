@@ -1,8 +1,8 @@
 <style type="text/css">
 .font-display {
-  font-family: {{ .Site.Params.headingFont | default "'Roboto', sans-serif" | safeCSS }};
+  font-family: {{ .Site.Params.fonts.heading | default "'Roboto', sans-serif" | safeCSS }};
 }
 .font-body {
-  font-family: {{ .Site.Params.bodyFont | default "'Roboto', sans-serif" | safeCSS }};
+  font-family: {{ .Site.Params.fonts.body | default "'Roboto', sans-serif" | safeCSS }};
 }
 </style>
