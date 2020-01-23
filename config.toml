@@ -1,4 +1,5 @@
-title = "Inspacare | Where inspiration meets quality care"
+baseURL = "https://inspacare.com"
+title = "Inspacare | Innovative medical glove dispensers"
 theme = "ion"
 languageCode = "en-US"
 enableRobotsTXT = true
@@ -7,7 +8,7 @@ enableRobotsTXT = true
   author = "Victor Ocnarescu"
   fonts = "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800&display=swap"
   sitename = "Inspacare"
-  description = "Where inspiration meets quality care"
+  description = "Inspacare introduces Glovesafe, an innovative glove dispenser. Reduces waste and contamination of gloves inadvertently removed. Improves safety"
   image = "/images/inspacare-wallpaper.jpg"
   favicon = "favicon.ico"
   analytics = "UA-154808408-1"
