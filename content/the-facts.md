@@ -10,4 +10,4 @@ A vast majority of medical professionals report inadvertently removing excess gl
 
 Hospital associated infections are on the rise and innovative solutions are needed to curb this trend.
 
-{{% button href="#" text="Our approach" %}}
+{{% button href="/blog" text="Find out more from our blog" %}}

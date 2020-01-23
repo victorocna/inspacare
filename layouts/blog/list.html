@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article
+  class="py-4 px-6 text-center text-gray-700 text-white flex flex-col items-center justify-center"
+  style="background: url(/images/background-homepage.jpg) center center / cover no-repeat;"
+>
+  <div class="text-white text-3xl py-8">Latest posts from our blog</div>
+</article>
+
+<article class="bg-white py-4 px-6">
+  <div class="lg:mx-auto lg:flex" style="max-width: 1200px">
+<ul>
+  {{ range .Pages }}
+  <li>
+    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+  </li>
+  {{ end }}
+</ul>
+  </div>
+</article>
+{{ end }}
