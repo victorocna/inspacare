@@ -1,2 +1,44 @@
 {{ define "main" }}
+<article
+  class="py-4 px-6 text-center text-gray-700 text-white flex flex-col items-center justify-center"
+  style="background: url(/images/background-homepage.jpg) center center / cover no-repeat;"
+>
+  <div class="text-white text-xl lg:text-3xl pt-8 pb-4">{{.Title}}</div>
+  <div class="flex text-white pb-4 text-sm lg:text-normal">
+    <div class="flex items-center mr-2">
+      <div class="text-gray-200 text-xl w-6">
+        <i class="far fa-calendar-alt"></i>
+      </div>
+      <div class="ml-1">{{.Date.Format "02 Jan, 2006"}}</div>
+    </div>
+    <div class="flex items-center mr-2">
+      <div class="text-gray-200 text-xl w-6">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="ml-1">{{.Params.Author}}</div>
+    </div>
+    <div class="hidden md:flex items-center mr-2">
+      <div class="text-gray-200 text-xl w-6">
+        <i class="fas fa-undo-alt"></i>
+      </div>
+      <div class="ml-1">
+        <a href="/blog">Back to blog</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="blog bg-white py-4 px-6 mb-4">
+  <div class="lg:mx-auto flex flex-col" style="max-width: 1200px">
+    <div class="content my-4">
+      {{.Content}}
+    </div>
+    <div>
+      <a class="text-blue text-body py-2" href="/blog">
+        <i class="fas fa-undo-alt"></i>
+        Back to blog
+      </a>
+    </div>
+  </div>
+</article>
 {{ end }}

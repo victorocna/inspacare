@@ -17,6 +17,21 @@ html {
   line-height: 1.625em;
   padding-right: 1rem;
 }
+.content h1,
+.content h2,
+.content h3 {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+.content h1 {
+  font-size: 1.5rem;
+}
+.content h2 {
+  font-size: 1.25rem;
+}
+.content h3 {
+  font-size: 1.125rem;
+}
 .content strong {
   color: #4252b1;
   font-weight: 600;
@@ -35,6 +50,14 @@ html {
   font-family: "Font Awesome 5 Free";
   content: "\f35a";
   margin: 0 0.5rem 0 -1.5rem;
+}
+.content a:not(.bg-green) {
+  color: #4252b1;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.blog content p:first-letter {
+  font-size: 2rem;
 }
 .the-benefits .content li:before {
   content: "\f058";
