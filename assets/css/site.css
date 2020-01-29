@@ -134,6 +134,9 @@ html {
     height: auto;
     width: auto;
   }
+  .nav-menu input:checked + ul {
+    box-shadow: none;
+  }
   .nav-menu ul,
   .nav-menu ul > li {
     opacity: 1;
