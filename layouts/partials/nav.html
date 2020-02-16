@@ -4,11 +4,8 @@
       <img src="/images/inspacare-logo-dark.png" alt="Inspacare Logo" width="64" title="&larr; Back to the homepage" />
     </a>
     <nav class="nav-menu inline-block lg:block lg:w-full">
-      <label class="block">
-        <input type="checkbox" id="menu" class="lg:hidden" aria-label="Menu open/close" />
-
-        {{ partial "menu-list.html" . }}
-      </label>
+      <input type="checkbox" id="menu" class="hidden" aria-label="Menu open/close" />
+      {{ partial "menu-list.html" . }}
     </nav>
     <button
       class="lg:hidden text-green flex items-center rounded-full border-2 p-1"
