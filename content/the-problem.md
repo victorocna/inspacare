@@ -2,7 +2,7 @@
 title: The Problem
 date: 2019-10-20
 icon: fas fa-exclamation-circle
-image: images/inspacare-the-problem-new-large.jpg
+image: images/inspacare-the-problem-optimized.jpg
 href: the-problem
 ---
 
