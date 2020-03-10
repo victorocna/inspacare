@@ -92,12 +92,12 @@ collections:
       - label: Date
         name: date
         widget: date
-      - label: Author
-        name: author
+      - label: Image
+        name: image
         widget: string
-      - label: Body
-        name: body
-        widget: markdown
+      - label: Link
+        name: link
+        widget: string
   - name: testimonials
     label: Testimonials
     folder: content/testimonials

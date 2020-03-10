@@ -19,10 +19,10 @@
 					}
 				],
 				"url": {
-					"raw": "https://inspacare.netlify.com/.netlify/identity/settings",
+					"raw": "https://fisca.netlify.com/.netlify/identity/settings",
 					"protocol": "https",
 					"host": [
-						"inspacare",
+						"fisca",
 						"netlify",
 						"com"
 					],
@@ -57,10 +57,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://inspacare.netlify.com/.netlify/identity/signup",
+					"raw": "https://fisca.netlify.com/.netlify/identity/signup",
 					"protocol": "https",
 					"host": [
-						"inspacare",
+						"fisca",
 						"netlify",
 						"com"
 					],
