@@ -1,8 +1,8 @@
 ---
-title: Glovesafe | An innovative glove dispenser
+title: GloveSafe | An innovative glove dispenser
 date: 2020-01-23
 author: Matt Hammons
-tags:
+tags: null
 ---
 
 The Inspacare GloveSafe is an easy to use glove dispensing system aimed at reducing waste and contamination. <!--more-->
