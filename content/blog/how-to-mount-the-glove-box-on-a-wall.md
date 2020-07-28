@@ -1,5 +1,5 @@
 ---
-title: How to mount the glove box on a wall
+title: Mounting the GloveSafe to the wall
 date: 2020-01-28
 author: Matt Hammons
 tags: null
