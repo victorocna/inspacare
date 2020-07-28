@@ -1,5 +1,5 @@
 ---
-title: The Glovesafe Benefits
+title: The GloveSafe Benefits
 date: 2019-10-20
 image: /images/The-Glovesafe-benefits.jpg
 ---
