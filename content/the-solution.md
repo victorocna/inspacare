@@ -1,8 +1,8 @@
 ---
-title: The Glovesafe solution
+title: The GloveSafe solution
 date: 2019-10-20
-icon: fas fa-lightbulb
 image: images/inspacare-glovesafe-closeup-large.jpg
+icon: fas fa-lightbulb
 href: our-solution
 ---
 
